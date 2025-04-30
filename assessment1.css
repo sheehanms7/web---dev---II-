@@ -1,0 +1,626 @@
+/*Importing Fonts*/
+@font-face {
+    font-family: protest;
+    src: url(Fonts/ProtestGuerrilla-Regular.ttf);
+  }
+  /*Importing Fonts*/
+  @font-face {
+    font-family: jose;
+    src: url(Fonts/JosefinSans-VariableFont_wght.ttf);
+  }
+  
+  /*Basic Styling Code*/
+  
+  body {
+    margin: 0;
+    background-color: #e9e9e9;
+    font-family: jose;
+    font-size: 16px;
+  }
+  
+  .nav-links {
+    text-align: center;
+    margin: 50px;
+  }
+  
+  .logo {
+    display: block;
+    padding-top: 50px;
+    width: 200px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .navbar {
+    padding-top: 50px;
+  }
+  
+  .navbar a {
+    gap: 50px;
+    color: black;
+    text-decoration: none;
+    margin: 50px;
+    list-style: none;
+    padding: 50px;
+    padding-top: 50px;
+  }
+  
+  .Title {
+    font-family: protest;
+    font-size: 100px;
+  }
+  
+  .h1-1 {
+    font-size: 30px;
+  }
+  
+  h1 {
+    font-family: protest;
+    font-size: 48px;
+  }
+  
+  .pr1 {
+    margin-right: 250px;
+  }
+  
+  .TEXT-1 {
+    background-color: white;
+    margin-right: 160px;
+    margin-left: 160px;
+    padding-top: 10px;
+  }
+  
+  .sub-1 {
+    margin: 50px;
+  }
+  
+  .TEXT-grid {
+    column-count: 3;
+  }
+  
+  .TEXT-grid h1 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .IMAGES {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .f-album {
+    height: auto;
+    width: 50%;
+  }
+  
+  .album-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0;
+  }
+  
+  .album-grid img {
+    height: auto;
+    width: 100%;
+  }
+  
+  h2 {
+    font-family: protest;
+    font-size: 48px;
+    text-align: center;
+  }
+  .author {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    font-size: 16px;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  
+  
+  .right-TEXT img {
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  footer {
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    background-color: #14181d;
+  }
+  
+  /*Small Mobile*/
+  @media (min-width: 360px) and (max-width: 540px) {
+  
+  
+    .nav-links {
+      margin: 12px;/*using 12 px spacing for small mobile as per specification*/
+    }
+  
+    .logo {
+      padding-top: 12px;/*using 12 px spacing for small mobile as per specification*/
+      width: 80px;
+    }
+  
+    .navbar {
+      padding-top: 12px;/*using 12 px spacing for small mobile as per specification*/
+      margin: 12px;/*using 12 px spacing for small mobile as per specification*/
+    }
+  
+    .navbar a {
+      gap: 12px;/*using 12 px spacing for small mobile as per specification*/
+      margin: 0;
+      padding: 12px;/*using 12 px spacing for small mobile as per specification*/
+      padding-top: 12px;/*using 12 px spacing for small mobile as per specification*/
+    }
+  
+    .Title {
+      margin: 0;
+      font-size: 48px; /*Font Size 3x larger than the default font*/
+    }
+  
+    .h1-1 {
+      font-size: 48px; /*Font Size 3x larger than the default font*/
+    }
+  
+    h1 {
+      text-align: center;
+    }
+  
+    .pr1 {
+      margin-right: 0px;
+    }
+  
+    .TEXT-1 {
+      width: 100%; /*Width changes to 100% to make the container full*/
+      margin-right: 0;
+      margin-left: 0;
+      padding-top: 12px;/*using 12 px spacing for small mobile as per specification*/
+    }
+  
+    .TEXT-grid {
+      column-count: 1; /*Column-count:1, to make the images and text vertical */
+    }
+  
+    .TEXT-grid h1 {
+      margin-bottom: 12px;/*using 12 px spacing for small mobile as per specification*/
+    }
+  
+    .IMAGES {
+      flex-wrap: wrap;
+    }
+    .f-album { /*Main Image*/
+      height: 350px;
+      width: 100%;
+    }
+  
+    .album-grid { /*4 IMAGE GRID*/
+      grid-template-columns: 1fr; /*1 column*/
+      grid-template-rows: 1fr; /*1 row*/
+    }
+  
+    .author {
+      padding-top: 300px;
+      height: 100px;
+      margin-right: 0;
+      margin-left: 0;
+      flex-direction: column-reverse;
+    }
+  
+    h2 {
+      font-size: 48px; /*Font Size 3x larger than the default font*/
+      margin: 0;
+    }
+  
+    .right-TEXT img {
+      height: auto;
+    }
+    .left-TEXT {
+      margin: 12px;/*using 12 px spacing for small mobile as per specification*/
+    }
+  }
+  
+  /*large Mobile*/
+  @media (min-width: 541px) and (max-width: 720px) {
+  
+    .nav-links {
+      text-align: center;
+      margin: 20px; /*using spacing 20px for large mobile screens*/
+    }
+  
+    .logo {
+      display: block;
+      padding-top: 20px; /*using spacing 20px for large mobile screens*/
+      width: 80px;
+      height: 100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .navbar {
+      padding-top: 20px; /*using spacing 20px for large mobile screens*/
+      margin: 20px; /*using spacing 20px for large mobile screens*/
+    }
+  
+    .navbar a {
+      gap: 20px; /*using spacing 20px for large mobile screens*/
+      color: black;
+      text-decoration: none;
+      margin: 0;
+      list-style: none;
+      padding: 20px; /*using spacing 20px for large mobile screens*/
+      padding-top: 20px; /*using spacing 20px for large mobile screens*/
+    }
+  
+    .Title {
+      margin: 0;
+      font-family: protest;
+      font-size: 48px;
+    }
+  
+    .h1-1 {
+      font-size: 48px;
+    }
+  
+    h1 {
+      font-family: protest;
+      font-size: 48px;
+      text-align: center;
+    }
+  
+    .pr1 {
+      margin-right: 0px;
+    }
+  
+    .TEXT-1 {
+      width: 100%;
+      background-color: white;
+      margin-right: 0;
+      margin-left: 0;
+      padding-top: 20px; /*using spacing 20px for large mobile screens*/
+    }
+  
+    .sub-1 {
+      margin: 50px;
+    }
+  
+    .TEXT-grid {
+      column-count: 1;
+    }
+  
+    .TEXT-grid h1 {
+      margin: 0;
+      margin-bottom: 20px; /*using spacing 20px for large mobile screens*/
+    }
+  
+    .IMAGES {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .f-album {
+      height: auto;
+      width: 100%;
+    }
+  
+    .album-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+  
+    .album-grid img {
+      height: auto;
+      width: 100%;
+    }
+  
+    .author {
+      padding-top: 300px;
+      display: flex;
+      align-items: center;
+      height: 100px;
+      font-size: 16px;
+      margin-right: 0;
+      margin-left: 0;
+      flex-direction: column-reverse;
+    }
+  
+    h2 {
+      font-family: protest;
+      font-size: 48px;
+      margin: 0;
+      text-align: center;
+    }
+  
+    .right-TEXT img {
+      margin-top: 50px;
+      width: 200px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  
+    footer {
+      color: white;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      background-color: #14181d;
+    }
+  
+    .left-TEXT {
+      margin: 20px; /*using spacing 20px for large mobile screens*/
+    }
+  }
+  
+  /*Tablet Screen Size*/
+  @media (min-width: 720px) and (max-width: 1023px) {
+    body {
+      margin: 0;
+      background-color: #e9e9e9;
+      font-family: jose;
+      font-size: 16px;
+    }
+  
+    .nav-links {
+      text-align: center;
+      margin: 30px; /*30px spacing for tablet screen devices*/
+    }
+  
+    .logo {
+      display: block;
+      padding-top: 30px; /*30px spacing for tablet screen devices*/
+      width: 200px;
+      height: 100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .navbar {
+      padding-top: 30px; /*30px spacing for tablet screen devices*/
+    }
+  
+    .navbar a {
+      gap: 30px; /*30px spacing for tablet screen devices*/
+      color: black;
+      text-decoration: none;
+      margin: 30px; /*30px spacing for tablet screen devices*/
+      list-style: none;
+      padding: 30px; /*30px spacing for tablet screen devices*/
+      padding-top: 30px; /*30px spacing for tablet screen devices*/
+    }
+  
+    .Title {
+      font-family: protest;
+      font-size: 100px;
+    }
+  
+    .h1-1 {
+      font-size: 48px;
+    }
+  
+    h1 {
+      font-family: protest;
+      font-size: 48px;
+      text-align: center;
+    }
+  
+    .pr1 {
+      margin-right: 30px; /*30px spacing for tablet screen devices*/
+    }
+  
+    .TEXT-1 {
+      background-color: white;
+      margin-right: 30px; /*30px spacing for tablet screen devices*/
+      margin-left: 30px; /*30px spacing for tablet screen devices*/
+      padding-top: 30px; /*30px spacing for tablet screen devices*/
+    }
+  
+    .sub-1 {
+      margin: 30px; /*30px spacing for tablet screen devices*/
+    }
+  
+    .TEXT-grid {
+      column-count: 1;
+    }
+  
+    .TEXT-grid h1 {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+  
+    .IMAGES {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .f-album {
+      display: none; /*For Making the main image dissapear*/
+      height: auto;
+      width: 100%;
+    }
+  
+    .album-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /*creating 2 x 2 grid*/ 
+      grid-template-rows: 1fr 1fr; /*creating 2 x 2 grid*/
+      gap: 0;
+    }
+  
+    .album-grid img {
+      height: auto;
+      width: 100%;
+    }
+  
+    .author {
+      display: flex;
+      align-items: center;
+      height: 300px;
+      font-size: 16px;
+      justify-content: space-between;
+      margin-right: 100px;
+      margin-left: 100px;
+    }
+  
+    h2 {
+      font-family: protest;
+      font-size: 48px;
+      text-align: center;
+    }
+  
+    .right-TEXT img {
+      margin-top: 30px;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  
+    footer {
+      color: white;
+      padding-top: 30px; /*30px spacing for tablet screen devices*/
+      padding-bottom: 30px; /*30px spacing for tablet screen devices*/
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      background-color: #14181d;
+    }
+  }
+  
+  /*Desktop Screen size and upper*/
+  @media (min-width: 1025px) {
+    body {
+      margin: 0;
+      background-color: #e9e9e9;
+      font-family: jose;
+      font-size: 16px;
+    }
+  
+    .nav-links {
+      text-align: center;
+      margin: 50px; /*50px spacing for desktop screen size and upper*/
+    }
+  
+    .logo {
+      display: block;
+      padding-top: 50px; /*50px spacing for desktop screen size and upper*/
+      width: 200px;
+      height: 100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .navbar {
+      padding-top: 50px; /*50px spacing for desktop screen size and upper*/
+    }
+  
+    .navbar a {
+      gap: 50px; /*50px spacing for desktop screen size and upper*/
+      color: black;
+      text-decoration: none;
+      margin: 50px; /*50px spacing for desktop screen size and upper*/
+      list-style: none;
+      padding: 50px; /*50px spacing for desktop screen size and upper*/
+      padding-top: 50px; /*50px spacing for desktop screen size and upper*/
+    }
+  
+    .Title {
+      font-family: protest;
+      font-size: 100px;
+    }
+  
+    .h1-1 {
+      font-size: 30px;
+    }
+  
+    h1 {
+      font-family: protest;
+      font-size: 48px;
+    }
+  
+    .pr1 {
+      margin-right: 250px;
+    }
+  
+    .sub-1 {
+      margin: 50px; /*50px spacing for desktop screen size and upper*/
+    }
+  
+    .TEXT-grid {
+      column-count: 3; /*column count 3 divide the text in 3 columns*/
+    }
+  
+    .TEXT-grid h1 {
+      margin: 0;
+      margin-bottom: 10px;
+    }
+  
+    .IMAGES {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .f-album {
+      height: auto;
+      width: 50%;
+    }
+  
+    .album-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 0;
+    }
+  
+    .album-grid img {
+      height: auto;
+      width: 100%;
+    }
+  
+    .author {
+      display: flex;
+      align-items: center;
+      height: 300px;
+      font-size: 16px;
+      justify-content: space-between;
+      margin-right: 100px;
+      margin-left: 100px;
+    }
+  
+    h2 {
+      font-family: protest;
+      font-size: 48px;
+      text-align: center;
+    }
+  
+    .right-TEXT img {
+      margin-top: 50px; /*50px spacing for desktop screen size and upper*/
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  
+    footer {
+      color: white;
+      padding-top: 50px; /*50px spacing for desktop screen size and upper*/
+      padding-bottom: 50px; /*50px spacing for desktop screen size and upper*/
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      background-color: #14181d;
+    }
+  }
